@@ -18,8 +18,11 @@ body {
 }
 
 @media (max-width:768px) {
-  .about-eisenhower-matrix { text-align: center;
-}
+
+  .about-eisenhower-matrix {
+    text-align: center;
+  }
+
 }
 .todo-list {
   display: block;
