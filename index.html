@@ -5,52 +5,52 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <article>
       <div class="about-eisenhower-matrix">
         <img src="./eisenhower-matrix.jpg" alt="">
-        <a class="more-information" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        <a class="about-eisenhower-matrix__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
       </div>
     </article>
     <main>
       <div class="todo-list">
-        <div id="form-add-task">
-          <label for="new-task">Add Item</label>
-          <div class="task-row">
-            <input id="new-task" class="task" type="text">
-            <button>Add</button>
+        <div class="todo-list__add-task-form">
+          <label class="todo-list__header todo-list__header_new-task" for="new-task">Add Item</label>
+          <div class="todo-list__add-task-form-wrapper">
+            <input id="new-task" class="todo-list__input-text" type="text">
+            <button class="todo-list__button todo-list__button_add">Add</button>
           </div>
         </div>
-        <h3>Todo</h3>
-        <ul id="incomplete-tasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit-btn">Edit</button>
-            <button class="delete-btn">
-              <img src="./remove.svg" alt="Delete">
+        <h3 class="todo-list__header">Todo</h3>
+        <ul class="todo-list__incomplete-tasks">
+          <li class="todo-list__item">
+            <input type="checkbox" class="todo-list__input-checkbox">
+            <label class="todo-list__task-text">Pay Bills</label>
+            <input type="text" class="todo-list__input-text">
+            <button class="todo-list__button todo-list__button_edit">Edit</button>
+            <button class="todo-list__button todo-list__button_delete">
+              <img class="todo-list__delete-img" src="./remove.svg" alt="Delete">
             </button>
           </li>
-          <li class="edit-mode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit-btn">Save</button>
-            <button class="delete-btn">
-              <img src="./remove.svg" alt="Delete">
+          <li class="todo-list__item todo-list__item_edit-mode">
+            <input type="checkbox" class="todo-list__input-checkbox">
+            <label class="todo-list__task-text">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="todo-list__input-text">
+            <button class="todo-list__button todo-list__button_edit">Save</button>
+            <button class="todo-list__button todo-list__button_delete">
+              <img class="todo-list__delete-img" src="./remove.svg" alt="Delete">
             </button>
           </li>
         </ul>
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit-btn">Edit</button>
-            <button class="delete-btn">
-              <img src="./remove.svg" alt="Delete">
+        <h3 class="todo-list__header">Completed</h3>
+        <ul class="todo-list__completed-tasks">
+          <li class="todo-list__item">
+            <input type="checkbox" class="todo-list__input-checkbox" checked>
+            <label class="todo-list__task-text">See the Doctor</label>
+            <input type="text" class="todo-list__input-text">
+            <button class="todo-list__button todo-list__button_edit">Edit</button>
+            <button class="todo-list__button todo-list__button_delete">
+              <img class="todo-list__delete-img" src="./remove.svg" alt="Delete">
             </button>
           </li>
         </ul>
